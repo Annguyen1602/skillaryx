@@ -1,0 +1,19 @@
+[
+  {
+    "id": "schema_valid",
+    "type": "deterministic",
+    "blocking": true
+  },
+  {
+    "id": "tests_pass",
+    "type": "command",
+    "command": "python -m pytest -q",
+    "blocking": true
+  },
+  {
+    "id": "no_unrestricted_network",
+    "type": "policy",
+    "expected": "deny",
+    "blocking": true
+  }
+]

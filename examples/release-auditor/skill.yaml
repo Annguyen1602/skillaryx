@@ -1,0 +1,15 @@
+id: release_auditor
+name: Release Auditor
+version: 0.1.0
+goal: Verify a Python project is safe to proceed toward production deployment.
+runtime: provider_adapter
+inputs:
+  - name: project_path
+    type: path
+    required: true
+outputs:
+  - name: decision
+    type: enum
+    values: [PASS, FAIL]
+  - name: evidence
+    type: list

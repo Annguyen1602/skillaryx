@@ -1,0 +1,10 @@
+{
+  "repo_read": true,
+  "tests_run": true,
+  "shell_allowlist": [
+    "python --version",
+    "python -m pytest -q"
+  ],
+  "network": "deny",
+  "network_allowlist": []
+}
